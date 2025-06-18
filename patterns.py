@@ -39,18 +39,25 @@ for i in range(1,n+1):
     print()
 n=int(input("enter n: "))
 #col no. reverse
+n=int(input("enter n: "))
 for i in range(n+1,1,-1):
+    for j in range(1,n-i+1):
+       print(" ",end="")
     for j in range(1,i):
         print(" "+str(j),end="")
     print()
 #row no. reverse
-for i in range(n,0,-1):
-    for j in range(0,i):
-        print(" "+str(i),end="")
-    print()
 n=int(input("enter n: "))
-#reverve
+for i in range(n+1,1,-1):
+    for j in range(1,n-i+1):
+       print(" ",end="")
+    for j in range(1,i):
+        print(" "+str(i-1),end="")
+    print()
+#reverse
 for i in range(n,0,-1):
+    for j in range(1,n-i):
+       print(" ",end="")
     for j in range(0,i):
         print("*",end="")
     print()
