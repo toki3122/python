@@ -1,0 +1,10 @@
+from tkinter import *
+window= Tk()
+frame=Frame(bg="pink",bd=5,relief=SUNKEN)
+#frame.pack()
+frame.place(x=100,y=100)
+Button(frame,text="W",font=("consolas",25),width=3).pack(side=TOP)
+Button(frame,text="A",font=("consolas",25),width=3).pack(side=LEFT)
+Button(frame,text="S",font=("consolas",25),width=3).pack(side=LEFT)
+Button(frame,text="D",font=("consolas",25),width=3).pack(side=LEFT)
+window.mainloop()
